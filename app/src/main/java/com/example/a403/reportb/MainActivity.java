@@ -15,7 +15,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     Switch s1;
     LinearLayout L1;
-    RadioGroup R1;
     ImageView IV1;
     RadioButton rb,rb1,rb2;
     Button btn1,btn2;
@@ -29,11 +28,12 @@ public class MainActivity extends AppCompatActivity {
 
         s1 = (Switch)findViewById(R.id.switch1);
         L1 = (LinearLayout)findViewById(R.id.linear1);
-        R1 = (RadioGroup)findViewById(R.id.rg1);
         IV1 = (ImageView)findViewById(R.id.imageView);
         rb = (RadioButton)findViewById(R.id.rb);
         rb1 = (RadioButton)findViewById(R.id.rb1);
         rb2 = (RadioButton)findViewById(R.id.rb2);
+        btn1 = (Button)findViewById(R.id.btn1);
+        btn1 = (Button)findViewById(R.id.btn2);
 
         s1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
