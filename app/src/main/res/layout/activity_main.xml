@@ -22,9 +22,11 @@
         android:text="시작함"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/switch1" />
+        android:id="@+id/switch1"/>
 
     <LinearLayout
+        android:id="@+id/linear1"
+        android:visibility="invisible"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -36,6 +38,7 @@
             android:id="@+id/textView" />
 
         <RadioGroup
+            android:id="@+id/rg1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
@@ -43,21 +46,21 @@
                 android:text="젤리빈(4.3)"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/radioButton"
+                android:id="@+id/rb"
                 android:layout_weight="1" />
 
             <RadioButton
                 android:text="롤리팝(5.0)"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/radioButton2"
+                android:id="@+id/rb1"
                 android:layout_weight="1" />
 
             <RadioButton
                 android:text="킷캣(4.4)"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/radioButton3"
+                android:id="@+id/rb2"
                 android:layout_weight="1" />
         </RadioGroup>
 
@@ -65,20 +68,20 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/android1"
+            android:src="@drawable/android1"
             android:id="@+id/imageView" />
 
         <Button
-            android:text="Button"
+            android:text="종료"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button2" />
+            android:id="@+id/btn1" />
 
         <Button
-            android:text="Button"
+            android:text="처음으로"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button" />
+            android:id="@+id/btn2" />
 
     </LinearLayout>
 </LinearLayout>
